@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="indexstyle.css" rel="stylesheet">
+        <link href="css/all.min.css" rel="stylesheet">
+        <link href="css/animate.css" rel="stylesheet">
+    </head>
+    <body class="background">
+        <div class="nav position-fixed">
+            <div class="">
+             <div class=" nav_links bg-dark  " >
+ 
+                 <a class="text-decoration-none text-white d-block p-4 Nowplaying wow bounceInUp  "data-wow-duration=".5s" data-wow-delay=".7s" href="#Nowplaying" id="Nowplaying" >Now playing</a>
+                           <a class="text-decoration-none text-white d-block p-4 Popular wow bounceInUp"data-wow-duration=".7s" data-wow-delay=".9s" href="#Popular" id="Popular" >duration</a>
+                           <a class="text-decoration-none text-white d-block p-4 TopRated wow bounceInUp"data-wow-duration=".9s" data-wow-delay="1.1s" href="#TopRated" id="TopRated" >Top Rated</a>
+                           <a class="text-decoration-none text-white d-block p-4 Trending wow bounceInUp" href="#Trending"data-wow-duration="1.1s" data-wow-delay="1.3s" id="trending" >Trending</a>
+                           <a class="text-decoration-none text-white d-block p-4 Upcoming wow bounceInUp" href="#Upcoming"data-wow-duration="1.3s" data-wow-delay="1.5s" id="Upcoming" >Up coming</a>
+                           <a class="text-decoration-none text-white d-block p-4 Upcoming wow bounceInUp" href="#Popular"data-wow-duration="1.5s" data-wow-delay="1.7s" id="Popular" >Popular</a>
+                           <a class="text-decoration-none text-white d-block p-4 Contact wow bounceInUp" href="#cont"data-wow-duration="1.7s" data-wow-delay="1.9s" id="ContactUs" >Contact Us</a>
+                       </div>
+            </div>
+             <span class="bg-white">
+                 <img src="images/logo.png" class="img-fluid w-25 ms-4 pt-5 pb-5"><br>
+                 <div class="pt-5 pb-5"><i class="fas fa-bars fa-2x menu pt-5 pb-5 ps-4 " id="menu"></i></div>
+                <div class="pt-5"> <i class="fas fa-globe fa-2x icon pt-5 ps-4 "></i></div>
+                 <i class="fas fa-share-alt fa-2x icon pt-5 mt-5 pb-5 ps-4"></i>
+             </span>
+         </div>
+
+
+        <div class="container p-5  ">
+            <div class="d-flex ">
+                <input onkeyup="search(this.value) " placeholder="get movies by word..." class=" fa-1x form-control ms-3 bg-dark text-white design " id="search">
+                <input placeholder="Search..." class=" fa-1x form-control ms-3 bg-dark design">
+            </div>
+            
+            <div id="dataRow" class="row ">
+                
+
+            </div>
+
+        </div>
+
+
+        <div class="container p-5" id="cont" >
+            <div class="row p-5" >
+                <h2 class="p-5 text-white">Contact Us ...</h2>
+                <div class="col-md-6 "  >
+                    <div class="position-relative">
+                        <input placeholder="Enter your Name"  class="text-white form-control design w-100 bg-dark fa-1x mb-5 " id="name" onkeyup="validname()">
+                        <small class="bg-light   position-absolute top-100 start-0 w-100   " id="ntext"></small>
+                    </div>
+                    
+                    <div class="position-relative">
+                        <input placeholder="Enter phone" id="phone"  class="form-control design w-100 bg-dark fa-1x mb-5 text-white " onkeyup="validnumber()">
+                        <small class="bg-light   position-absolute top-100 start-0 w-100   " id="text2"></small>
+                    </div>
+                    <div class="position-relative">
+                        <input placeholder="Enter your Password"  class="form-control design w-100 bg-dark fa-1x mb-5 text-white" id="password" onkeyup="validpassword()">
+                        <small class="bg-light   position-absolute top-100 start-0 w-100   " id="ptext"></small>
+                    </div>
+
+                </div>
+               
+                <div class="col-md-6" id="form">
+                    <div class="position-relative">
+                        <input placeholder="Enter Email" id="email1" class="form-control design w-100 bg-dark fa-1x mb-5 text-white" onkeydown=" valid()" >
+                        <small class="bg-light   position-absolute top-100 start-0 w-100    " id="text" ></small>
+                    </div>
+                    <div class="position-relative">
+                        <input placeholder="Enter Age"  class="form-control text-white design w-100 bg-dark fa-1x mb-5" id="age" onkeyup="validage()">
+                        <small class="bg-light   position-absolute top-100 start-0 w-100   " id="atext"></small>
+                    </div>
+                    <div class="position-relative">
+                        <input placeholder="Enter RePassword" id="repassword"  class="text-white form-control design w-100 bg-dark fa-1x mb-5 " onkeyup="validrepassword()">
+                        <small class="bg-light   position-absolute top-100 start-0 w-100   " id="retext"></small>
+                    </div>
+
+                </div>
+                <button class="btn btn-outline-danger  w-25 m-4 ">Submit</button>
+            </div>
+
+        </div>
+
+
+
+       
+
+
+
+
+
+
+
+
+        <script src="jquery-3.6.0.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="index.js"></script>
+        <script  src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
